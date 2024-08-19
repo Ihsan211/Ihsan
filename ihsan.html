@@ -1,0 +1,40 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html>
+<head>
+  <title>App Download</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-download">
+    <img src="ia_store_icon.png" alt="IA Store">
+    <div class="download-buttons">
+      <a href="https://play.google.com/store" target="_blank"><img src="play_store_icon.png" alt="Play Store"></a>
+      <a href="https://apps.apple.com" target="_blank"><img src="app_store_icon.png" alt="App Store"></a>
+      <a href="https://galaxystore.samsung.com" target="_blank"><img src="galaxy_store_icon.png" alt="Galaxy Store"></a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<style>.app-download {
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+}
+</style><script>// Example: tracking button clicks
+const downloadButton = document.querySelector('.app-download a');
+downloadButton.addEventListener('click', () => {
+  // Add your tracking code here
+  console.log('App download button clicked');
+});
+</script>
